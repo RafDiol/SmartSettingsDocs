@@ -11,19 +11,19 @@
         <meta name="author" content="Rafael Diol">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
-        <title>Smart Settings Docs</title>
+        <title>Quick Start - Smart Settings Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8b42a75e.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8b42a75e.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -55,7 +55,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#smart-settings" class="md-skip">
+        <a href="#quick-start" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Smart Settings Docs" class="md-header__button md-logo" aria-label="Smart Settings Docs" data-md-component="logo">
+    <a href=".." title="Smart Settings Docs" class="md-header__button md-logo" aria-label="Smart Settings Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Quick Start
             
           </span>
         </div>
@@ -163,7 +163,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Smart Settings Docs" class="md-nav__button md-logo" aria-label="Smart Settings Docs" data-md-component="logo">
+    <a href=".." title="Smart Settings Docs" class="md-nav__button md-logo" aria-label="Smart Settings Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -173,6 +173,21 @@
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
     
       
       
@@ -191,25 +206,10 @@
         
       
       
-      <a href="." class="md-nav__link md-nav__link--active">
-        Home
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="quick_start/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         Quick Start
       </a>
+      
     </li>
   
 
@@ -222,7 +222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="settings_class/" class="md-nav__link">
+      <a href="../settings_class/" class="md-nav__link">
         Settings Class
       </a>
     </li>
@@ -259,9 +259,27 @@
               
                 
                 
-                <h1 id="smart-settings">Smart Settings</h1>
-<p>Smart Settings is a library that allows you to store and access data stored in a designated file during runtime. It creates a save file that stores the data in a json format so it can be distributed if necessary. </p>
-<p>Get familiar with the library by checking out <a href="quick_start/">quick start</a></p>
+                <h1 id="quick-start">Quick Start</h1>
+<p>In this quick start guide we will be making an app that stores and the and the age of our user.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="kt">string</span> <span class="n">name</span><span class="p">;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+<span class="linenos" data-linenos=" 3 "></span>
+<span class="linenos" data-linenos=" 4 "></span><span class="c1">// Get the values we need</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Whats your name?&quot;</span><span class="p">);</span>
+<span class="linenos" data-linenos=" 6 "></span><span class="n">name</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="linenos" data-linenos=" 7 "></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Whats your age?&quot;</span><span class="p">);</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="n">age</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="linenos" data-linenos=" 9 "></span>
+<span class="linenos" data-linenos="10 "></span><span class="c1">// Store the values</span>
+<span class="linenos" data-linenos="11 "></span><span class="n">Settings</span> <span class="n">settings</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Settings</span><span class="p">(</span><span class="s">&quot;App.sett&quot;</span><span class="p">);</span> <span class="c1">// Initialize our setting class</span>
+<span class="linenos" data-linenos="12 "></span><span class="n">settings</span><span class="p">.</span><span class="n">EncodeString</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+<span class="linenos" data-linenos="13 "></span><span class="n">settings</span><span class="p">.</span><span class="n">EncodeInt</span><span class="p">(</span><span class="s">&quot;age&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
+<span class="linenos" data-linenos="14 "></span>
+<span class="linenos" data-linenos="15 "></span><span class="c1">// Read the values</span>
+<span class="linenos" data-linenos="16 "></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Hello, {settings.DecodeString(&quot;</span><span class="n">name</span><span class="s">&quot;)}&quot;</span><span class="p">);</span>
+<span class="linenos" data-linenos="17 "></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;You are {settings.DecodeInt(&quot;</span><span class="n">age</span><span class="s">&quot;)}&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>Even though we can now read and write from the settings file this does not mean that the changes made have been physically been written on the disk yet. Always remember to call <a href="../settings_class/"><code>settings.Save()</code></a> before your app terminates so that any changes made are written to the disk.</p>
                 
               
               
@@ -280,15 +298,30 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="quick_start/" class="md-footer__link md-footer__link--next" aria-label="Next: Quick Start" rel="next">
+        <a href="../settings_class/" class="md-footer__link md-footer__link--next" aria-label="Next: Settings Class" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Quick Start
+              Settings Class
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -319,10 +352,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.4fc53ad4.min.js"></script>
+      <script src="../assets/javascripts/bundle.4fc53ad4.min.js"></script>
       
     
   </body>
